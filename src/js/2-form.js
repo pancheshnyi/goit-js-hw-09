@@ -22,6 +22,8 @@ function handleSubmit(event) {
     return;
   }
 
+  console.log(formData);
+
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
   formData.email = '';
